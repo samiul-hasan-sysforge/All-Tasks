@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API task</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+    <div class="m-10 flex gap-5">
+        <button onclick="comment()" class="btn btn-soft btn-primary">Show Comment</button>
+        <button onclick="users()" class="btn btn-soft btn-primary">Show Users</button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-8 p-10 bg-base-200">
+
+        <!-- Left Side (Comments Column) -->
+        <section id="comment" class="flex flex-col gap-6 overflow-y-auto max-h-screen">
+        </section>
+
+
+        <!-- Right Side (Profile Column) -->
+        <section id="users" class="flex flex-col gap-6 overflow-y-auto max-h-screen">
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
